@@ -12,7 +12,7 @@ if (!function_exists('wpcUsersRewriteRule')) {
     function wpcUsersRewriteRule()
     {
         $usersPage = apply_filters('wpc_users_page_name', 'users');
-        add_rewrite_rule(sprintf('%s/?([0-9/]*)', esc_url($usersPage)), 'index.php?users_page=1&user_id=$matches[1]', 'top');
+        add_rewrite_rule(sprintf('%s/?([0-9/]*)', $usersPage), 'index.php?users_page=1&user_id=$matches[1]', 'top');
     }
 }
 

@@ -13,3 +13,4 @@ define("WPC_TEST_URL", plugin_dir_url(__FILE__));
 define("WPC_TEST_VERSION", "1.0.0");
 
 require_once WPC_TEST_DIR . "/vendor/autoload.php";
+require_once WPC_TEST_DIR . "/includes/bootstrap.php";
